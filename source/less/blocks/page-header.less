@@ -1,9 +1,16 @@
 .page-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .page-header__logo {
-
+  order: 2;
+  height: 56px;
+  z-index: 10;
 }
 
 .page-header__logo-image {
@@ -11,13 +18,36 @@
 }
 
 .page-header__page-nav {
-
+  order: 1;
 }
 
 .page-header__promo-background {
-
+  position: relative;
+  order: 3;
+  background-color: rgb(181, 211, 232);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  width: 100%;
+  min-height: 389px;
+  text-align: center;
 }
 
 .page-header__promo-image {
+  width: 281px;
+  height: 214px;
+  margin-top: 90px;
+}
 
+.page-header__promo-background::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  min-height: 26px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
