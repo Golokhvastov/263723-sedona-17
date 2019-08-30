@@ -6,7 +6,7 @@
 .page-main__text {
   margin: 0;
   padding: 0;
-  width: 260px;
+  width: 272px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -27,7 +27,12 @@
   margin-bottom: 23px;
 }
 
-.page-main__text::before {
+.inner-page .page-main__text {
+  line-height: 1.71;
+  margin-bottom: 28px;
+}
+
+.page-main__text--after-arrow::after {
   content: "";
   position: absolute;
   bottom: -42px;
@@ -100,11 +105,15 @@
     rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
 
-
-.page-main__start-text {
-
+.page-main__cards {
+  margin-bottom: 73px;
 }
 
-.page-main__cards {
-
+.page-main__video {
+  // Временно для сетки
+  height: 427px;
+  background: linear-gradient(
+    rgba(255, 0, 0, 0.3) 1px,
+    rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px),
+    rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
