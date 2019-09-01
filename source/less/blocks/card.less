@@ -1,0 +1,63 @@
+.card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+  order: 2;
+  font-size: @font-size__paragraph;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.card__text {
+  margin: 0;
+  padding: 0;
+  order: 3;
+  font-size: @font-size__paragraph;
+  line-height: 24px;
+  text-transform: none;
+  margin-bottom: 10px;
+  color: @font-color__paragraph;
+}
+
+.card__likes {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  order: 4;
+  font-size: @font-size__paragraph;
+  font-weight: bold;
+  line-height: 24px;
+  font-family: inherit;
+
+  padding-left: 42px;
+  padding-right: 5px;
+  margin-left: -5px;
+  border: 0;
+  background: transparent;
+}
+
+.card__likes::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 23px;
+  height: 21px;
+  margin-top: -13px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.card__image {
+  order: 1;
+  margin-bottom: 16px;
+}

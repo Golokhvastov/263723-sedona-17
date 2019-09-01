@@ -1,0 +1,40 @@
+.social {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__icon {
+  display: flex;
+  width: 46px;
+  min-height: 48px;
+
+  background-color: @bg__water-blue;
+}
+
+.social__icon:hover {
+  background-color: @bg__water-blue--darker;
+}
+
+.social__icon:active {
+  background-color: @bg__water-blue--darkest;
+}
+
+.social__icon:active .social__icon-image {
+  opacity: 0.3;
+}
+
+.social__icon-image {
+  margin: auto;
+}
