@@ -50,3 +50,57 @@
   padding: 0;
   color: @font-color__paragraph;
 }
+
+@media (min-width: @tablet-width) {
+  .feature {
+    width: 166px;
+  }
+
+  .feature--housing {
+    order: 1;
+  }
+
+  .feature--souvenirs {
+    order: 3;
+  }
+
+  .feature--food {
+    order: 2;
+  }
+
+  .feature--housing::before {
+    top: 3px;
+    left: 50%;
+    margin-left: -37.5px;
+    width: 75px;
+    height: 73px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  .feature--souvenirs::before {
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 76px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  .feature--food::before {
+    top: 6px;
+    left: 50%;
+    margin-left: -38.5px;
+    width: 77px;
+    height: 69px;
+    background-image: url("../img/icon-burger.svg");
+  }
+
+  .feature__title {
+    font-size: @font-size__title--big;
+    text-align: center;
+  }
+
+  .feature__text {
+    text-align: center;
+  }
+}

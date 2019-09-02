@@ -38,3 +38,58 @@
   background-color: @bg__water-blue--darkest;
   color: rgba(255, 255, 255, 0.3);
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    width: 153px;
+    min-height: 40px;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  .site-list__item:nth-child(4n-2) {
+    margin-right: 156px;
+  }
+
+  .site-list__item-link {
+    display: inline;
+    padding: 10px;
+    color: #000000;
+    font-size: @font-size__paragraph;
+    line-height: 26px;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .site-list__item:first-child .site-list__item-link {
+    box-shadow: none;
+  }
+
+  .site-list__item:last-child .site-list__item-link {
+    box-shadow: none;
+  }
+
+  // .site-list__item-link[href]:hover {
+  //   background-color: @bg__water-blue--darker;
+  // }
+  //
+  // .site-list__item-link[href]:active {
+  //   background-color: @bg__water-blue--darkest;
+  //   color: rgba(255, 255, 255, 0.3);
+  // }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    width: 239px;
+  }
+
+  .site-list__item:nth-child(4n-2) {
+    margin-right: 244px;
+  }
+}
