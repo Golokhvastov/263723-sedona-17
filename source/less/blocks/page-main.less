@@ -24,11 +24,6 @@
   color: @font-color__paragraph;
 }
 
-.inner-page .page-main__text {
-  line-height: 24px;
-  margin-bottom: 28px;
-}
-
 .page-main__text--after-arrow::after {
   content: "";
   position: absolute;
@@ -99,19 +94,30 @@
   background: linear-gradient(rgba(255, 0, 0, 0.3) 1px, rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px), rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
 
+.inner-page .page-main__main-title {
+  margin-bottom: 26px;
+}
+
+.inner-page .page-main__text {
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
 .page-main__cards {
-  margin-bottom: 73px;
+  margin-bottom: 32px;
 }
 
 .page-main__video {
   // Временно для сетки
   height: 427px;
+  margin-bottom: 40px;
   background: linear-gradient(rgba(255, 0, 0, 0.3) 1px, rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px), rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
 
 .page-main__form {
   // Временно для сетки
-  height: 1650px;
+  height: 1611px;
+  margin-bottom: 38px;
   background: linear-gradient(rgba(255, 0, 0, 0.3) 1px, rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px), rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
 
@@ -189,12 +195,12 @@
   .inner-page .page-main__main-title {
     font-size: @font-size__title--biggest;
     width: 440px;
-    // margin-bottom: 28px;
+    margin-bottom: 32px;
   }
 
   .inner-page .page-main__text {
     width: 440px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .page-main__cards {
@@ -205,6 +211,12 @@
     // Временно для сетки
     height: 684px;
     margin-bottom: 40px;
+  }
+
+  .page-main__form {
+    // Временно для сетки
+    height: 1346px;
+    margin-bottom: 60px;
   }
 }
 
@@ -252,6 +264,14 @@
     height: 631px;
   }
 
+  .inner-page .page-main__main-title {
+    margin-bottom: 30px;
+  }
+
+  .inner-page .page-main__text {
+    margin-bottom: 71px;
+  }
+
   .page-main__cards {
     margin-bottom: 64px;
   }
@@ -260,5 +280,11 @@
     // Временно для сетки
     height: 682px;
     margin-bottom: 85px;
+  }
+
+  .page-main__form {
+    // Временно для сетки
+    height: 1140px;
+    margin-bottom: 66px;
   }
 }
