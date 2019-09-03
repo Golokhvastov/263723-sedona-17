@@ -28,7 +28,6 @@
     padding-left: 45px;
     padding-bottom: 10px;
     min-height: 203px;
-    box-shadow: none;
   }
 
   .reason-with-picture__image {
@@ -39,5 +38,27 @@
 
   .reason-with-picture__image--left {
     order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason-with-picture__reason-text {
+    padding-right: 85px;
+    padding-top: 50px;
+    padding-left: 85px;
+    min-height: 196px;
+  }
+
+  .page-main__reason-with-picture--first-reason .reason-with-picture__reason-text {
+    width: 286px;
+    padding-right: 57px;
+    padding-top: 45px;
+    padding-left: 57px;
+    min-height: 201px;
+  }
+
+  .reason-with-picture__image {
+    // Временно для сетки
+    width: 800px;
   }
 }
