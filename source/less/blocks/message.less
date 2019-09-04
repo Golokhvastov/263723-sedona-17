@@ -1,0 +1,134 @@
+.message {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  border: 0;
+}
+
+.message__title {
+  font-size: @font-size__title;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.message__item {
+  position: relative;
+}
+
+.message__item:last-child {
+  margin-bottom: 0;
+}
+
+.message__item--text-inputs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message__item--icon {
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.message__item--icon::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: lighten(@bg__gray--darker, 0.5%);
+  z-index: 10;
+}
+
+.message__item--icon::after {
+  content: "";
+  position: absolute;
+  bottom: 19px;
+  right: 19px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 20;
+}
+
+.message__item--icon-phone::after {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.message__item--icon-email::after {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.message__item--radio {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.message__item--checkbox {
+  margin-bottom: 26px;
+}
+
+.message__label {
+  line-height: 1.86;
+  color: @font-color__paragraph;
+  margin-right: 14px;
+  margin-bottom: -3px;
+}
+
+.message__label--whole-line {
+  margin-right: 0;
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+
+.message__input {
+  font-size: @font-size__title;
+  font-weight: bold;
+  line-height: 1.44;
+  font-family: inherit;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+  padding-left: 22px;
+  border: 0;
+  background-color: @bg__gray;
+  width: 100%;
+}
+
+.message__input::placeholder {
+  color: black;
+}
+
+.message__item--icon .message__input {
+  margin-right: 54px;
+}
+
+.message__input:hover {
+  background-color: @bg__gray--darker;
+}
+
+.message__input:active,
+.message__input:focus {
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-right: 6px;
+  padding-bottom: 13px;
+  padding-left: 18px;
+  border: 4px solid @bg__gray--darker;
+}
+
+.message__textarea {
+  height: 127px;
+  resize: none;
+}
+
+.message__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

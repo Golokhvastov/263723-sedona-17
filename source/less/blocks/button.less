@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  background-color: @bg__water-blue;
+  font-size: @font-size__title--big;
+  font-weight: bold;
+  line-height: 26px;
+  font-family: inherit;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.button:hover {
+  background-color: @bg__water-blue--darker;
+}
+
+.button:active {
+  background-color: @bg__water-blue--darkest;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: @bg__gray--darker;
+}

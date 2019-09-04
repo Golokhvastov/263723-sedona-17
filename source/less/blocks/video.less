@@ -1,0 +1,36 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__title,
+.video__text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 250px;
+}
+
+.video__title {
+  margin-bottom: 27px;
+  font-size: @font-size__title;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.video__text {
+  margin-bottom: 35px;
+  font-size: @font-size__paragraph;
+  font-weight: normal;
+  line-height: 24px;
+  color: @font-color__paragraph;
+}
+
+.video__video-controls {
+  width: 280px;
+  margin-top: -45px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 45px, @bg__gray 45px);
+  min-height: 109px;
+  padding-top: 2px;
+}
