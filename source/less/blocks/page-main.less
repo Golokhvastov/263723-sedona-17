@@ -12,7 +12,7 @@
   font-size: @font-size__title;
   font-weight: bold;
   line-height: 26px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .page-main__text {
@@ -20,16 +20,11 @@
   font-size: @font-size__paragraph;
   font-weight: normal;
   line-height: 26px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   color: @font-color__paragraph;
 }
 
-.inner-page .page-main__text {
-  line-height: 24px;
-  margin-bottom: 28px;
-}
-
-.page-main__text--after-arrow::after {
+.page-main__text--arrow-after::after {
   content: "";
   position: absolute;
   bottom: -42px;
@@ -42,7 +37,7 @@
   background-position: 0 0;
 }
 
-.page-main__reason-with-picture--first-reason {
+.page-main__after-arrow {
   padding-top: 21px;
   margin-bottom: 34px;
 }
@@ -61,7 +56,7 @@
 .page-main__reason {
   padding-top: 27px;
   padding-right: 15px;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
   padding-left: 15px;
   box-shadow: inset 0 1px 0 0 rgba(1, 1, 1, 0.1);
 }
@@ -86,7 +81,7 @@
 }
 
 .page-main__features-item {
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 
 .page-main__features-item:last-child {
@@ -99,18 +94,178 @@
   background: linear-gradient(rgba(255, 0, 0, 0.3) 1px, rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px), rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
 
+.inner-page .page-main__main-title {
+  margin-bottom: 26px;
+}
+
+.inner-page .page-main__text {
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
 .page-main__cards {
-  margin-bottom: 73px;
+  margin-bottom: 32px;
 }
 
 .page-main__video {
   // Временно для сетки
   height: 427px;
+  margin-bottom: 40px;
   background: linear-gradient(rgba(255, 0, 0, 0.3) 1px, rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px), rgba(255, 0, 0, 0.3) calc(100% - 1px));
 }
 
 .page-main__form {
   // Временно для сетки
-  height: 1650px;
+  height: 1611px;
+  margin-bottom: 38px;
   background: linear-gradient(rgba(255, 0, 0, 0.3) 1px, rgba(255, 0, 0, 0.15) 1px, rgba(255, 0, 0, 0.15) calc(100% - 1px), rgba(255, 0, 0, 0.3) calc(100% - 1px));
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__main-title,
+  .page-main__text {
+    width: 500px;
+  }
+
+  .page-main__main-title {
+    font-size: @font-size__title--big;
+    // margin-bottom: 28px;
+  }
+
+  .page-main__text {
+    margin-bottom: 51px;
+  }
+
+  .page-main__text--arrow-after::after {
+    display: none;
+  }
+
+  .page-main__after-arrow {
+    padding-top: 0;
+    margin-bottom: 57px;
+  }
+
+  .page-main__reasons-list {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .page-main__reason {
+    padding-right: 45px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    min-height: 201px;
+    box-shadow: none;
+  }
+
+  .page-main__reason:nth-child(2) .reason__paragraph {
+    width: 135px;
+    margin: auto;
+  }
+
+  .page-main__features {
+    margin-bottom: 51px;
+  }
+
+  .page-main__features-list {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .page-main__features-item {
+    padding-top: 0;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .page-main__features-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .page-main__map {
+    // Временно для сетки
+    height: 618px;
+  }
+
+  .inner-page .page-main__main-title {
+    font-size: @font-size__title--biggest;
+    width: 440px;
+    margin-bottom: 32px;
+  }
+
+  .inner-page .page-main__text {
+    width: 440px;
+    margin-bottom: 68px;
+  }
+
+  .page-main__cards {
+    margin-bottom: 60px;
+  }
+
+  .page-main__video {
+    // Временно для сетки
+    height: 684px;
+    margin-bottom: 40px;
+  }
+
+  .page-main__form {
+    // Временно для сетки
+    height: 1346px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__reason {
+    padding-right: 57px;
+    padding-left: 57px;
+  }
+
+  .page-main__reason:nth-child(2) .reason__paragraph {
+    width: 266px;
+  }
+
+  .page-main__features {
+    margin-bottom: 73px;
+  }
+
+  .page-main__features-item {
+    padding-right: 57px;
+    padding-left: 57px;
+    padding-bottom: 10px;
+  }
+
+  .page-main__map {
+    // Временно для сетки
+    height: 631px;
+  }
+
+  .inner-page .page-main__main-title {
+    margin-bottom: 30px;
+  }
+
+  .inner-page .page-main__text {
+    margin-bottom: 71px;
+  }
+
+  .page-main__cards {
+    margin-bottom: 64px;
+  }
+
+  .page-main__video {
+    // Временно для сетки
+    height: 682px;
+    margin-bottom: 85px;
+  }
+
+  .page-main__form {
+    // Временно для сетки
+    height: 1140px;
+    margin-bottom: 66px;
+  }
 }

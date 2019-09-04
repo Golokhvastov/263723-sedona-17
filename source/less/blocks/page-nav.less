@@ -44,3 +44,24 @@
 .main-nav--opened .page-nav__toggle::before {
   background-image: url("../img/icon-cross.svg");
 }
+
+@media (min-width: @tablet-width) {
+  .page-nav {
+    width: 768px;
+    background-color: transparent;
+  }
+
+  .page-nav__toggle {
+    display: none;
+  }
+
+  .page-nav__site-list {
+    margin-top: -56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav {
+    width: 1200px;
+  }
+}

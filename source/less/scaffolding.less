@@ -45,3 +45,22 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (min-width: @tablet-width) {
+  html {
+    background-color: @bg__gray;
+  }
+
+  body {
+    width: 768px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+  }
+}

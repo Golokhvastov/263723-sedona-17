@@ -57,3 +57,68 @@
 .inner-page .page-header__promo-image {
   margin-top: 52px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: 50px;
+  }
+
+  .page-header__page-nav {
+    order: 3;
+  }
+
+  .page-header__promo-background {
+    min-height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-header__promo-image {
+    margin-top: 77px;
+    width: 460px;
+    height: 350px;
+  }
+
+  .page-header__promo-background::after {
+    margin-left: -384px;
+    width: 768px;
+    min-height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .inner-page .page-header {
+    margin-bottom: 74px;
+  }
+
+  .inner-page .page-header__promo-background {
+    min-height: 290px;
+  }
+
+  .inner-page .page-header__promo-image {
+    margin-top: 94px;
+    height: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__promo-background {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__promo-background::after {
+    margin-left: -600px;
+    width: 1200px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .inner-page .page-header {
+    margin-bottom: 112px;
+  }
+
+  .inner-page .page-header__promo-background {
+    min-height: 301px;
+  }
+
+  .inner-page .page-header__promo-image {
+    margin-top: 102px;
+  }
+}
