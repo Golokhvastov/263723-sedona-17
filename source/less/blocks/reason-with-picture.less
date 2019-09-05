@@ -11,9 +11,15 @@
   padding-bottom: 41px;
 }
 
-.reason-with-picture__image {
+.reason-with-picture__image-wrapper {
   order: 3;
+  height: 260px;
+}
+
+.reason-with-picture__image {
   background-color: @bg__water-blue;
+  width: 320px;
+  height: 260px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,12 +37,16 @@
   }
 
   .reason-with-picture__image {
-    // Временно для сетки
     width: 512px;
+    height: 256px;
+    object-fit: cover;
+  }
+
+  .reason-with-picture__image-wrapper {
     height: 256px;
   }
 
-  .reason-with-picture__image--left {
+  .reason-with-picture__image-wrapper--left {
     order: 1;
   }
 }
@@ -56,7 +66,6 @@
   }
 
   .reason-with-picture__image {
-    // Временно для сетки
     width: 800px;
   }
 }
