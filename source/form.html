@@ -45,35 +45,42 @@
       <h1 class="page-main__main-title">Оставьте свой отзыв</h1>
       <p class="page-main__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="page-main__messages-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="message  page-main__messages-form-item">
-          <legend class="message__title">Представьтесь:</legend>
-          <p class="message__item  message__item--text-inputs">
-            <label class="message__label" for="message-name">ИМЯ*:</label>
-            <input class="message__input" id="message-name" type="text" name="name" value="" placeholder="Петр">
-          </p>
-          <p class="message__item  message__item--text-inputs">
-            <label class="message__label" for="message-surname">ФАМИЛИЯ*:</label>
-            <input class="message__input" id="message-surname" type="text" name="surname" value="" placeholder="Иванов">
-          </p>
-          <p class="message__item  message__item--text-inputs">
-            <label class="message__label" for="message-patronymic">Отчество:</label>
-            <input class="message__input" id="message-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
-          </p>
+        <fieldset class="message  message--small  page-main__messages-form-item">
+          <legend class="message__title"><span>Представьтесь:</span></legend>
+          <ul class="message__list  message__list--text-inputs">
+            <li class="message__item  message__item--text-inputs">
+              <label class="message__label" for="message-name">ИМЯ*:</label>
+              <input class="message__input" id="message-name" type="text" name="name" value="" placeholder="Петр">
+            </li>
+            <li class="message__item  message__item--text-inputs">
+              <label class="message__label" for="message-surname">ФАМИЛИЯ*:</label>
+              <input class="message__input" id="message-surname" type="text" name="surname" value="" placeholder="Иванов">
+            </li>
+            <li class="message__item  message__item--text-inputs">
+              <label class="message__label" for="message-patronymic">Отчество:</label>
+              <input class="message__input" id="message-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="message  message--big  page-main__messages-form-item">
+          <legend class="message__title"><span>Контактная информация:</span></legend>
+          <ul class="message__list  message__list--text-inputs  message__list--label-above-input">
+            <li class="message__item  message__item--text-inputs  message__item--icon  message__item--icon-phone">
+              <label class="message__label  message__label--whole-line" for="message-tel">
+                <span class="message__label-tel--mobile">Контактный телефон*:</span>
+                <span class="message__label-tel--desktop">Телефон*:</span>
+              </label>
+              <input class="message__input" id="message-tel" type="text" name="tel" value="" placeholder="Введите телефон">
+            </li>
+            <li class="message__item  message__item--text-inputs  message__item--icon  message__item--icon-email">
+              <label class="message__label  message__label--whole-line" for="message-email">Электронная почта*:</label>
+              <input class="message__input" id="message-email" type="text" name="email" value="" placeholder="Введите e-mail">
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="message  page-main__messages-form-item">
-          <legend class="message__title">Контактная информация:</legend>
-          <p class="message__item  message__item--text-inputs  message__item--icon  message__item--icon-phone">
-            <label class="message__label  message__label--whole-line" for="message-tel">Контактный телефон*:</label>
-            <input class="message__input" id="message-tel" type="text" name="tel" value="" placeholder="Введите телефон">
-          </p>
-          <p class="message__item  message__item--text-inputs  message__item--icon  message__item--icon-email">
-            <label class="message__label  message__label--whole-line" for="message-email">Электронная почта*:</label>
-            <input class="message__input" id="message-email" type="text" name="email" value="" placeholder="Введите e-mail">
-          </p>
-        </fieldset>
-        <fieldset class="message  page-main__messages-form-item">
-          <legend class="message__title">ВАше Общее впечатление:</legend>
-          <ul class="message__list">
+          <legend class="message__title"><span>ВАше Общее впечатление:</span></legend>
+          <ul class="message__list  message__list--radio">
             <li class="radio  message__item  message__item--radio">
               <div class="radio__wrapper">
                 <label class="radio__label">
@@ -103,9 +110,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="message  page-main__messages-form-item">
-          <legend class="message__title">посещенные достопримечательности:</legend>
-          <ul class="message__list">
+        <fieldset class="message  message--big  page-main__messages-form-item">
+          <legend class="message__title"><span>посещенные достопримечательности:</span></legend>
+          <ul class="message__list  message__list--checkboxs">
             <li class="checkbox  message__item  message__item--checkbox">
               <div class="checkbox__wrapper">
                 <label class="checkbox__label">
@@ -144,16 +151,19 @@
           </li>
           </ul>
         </fieldset>
-        <fieldset class="message  page-main__messages-form-item">
-          <legend class="message__title">Опишите свои эмоции:</legend>
-          <p class="message__item--text-inputs">
-            <label for="message-text" class="visually-hidden">Контактный телефон*:</label>
-            <textarea id="message-text" class="message__input  message__textarea" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
-          </p>
+        <fieldset class="message  message--big  page-main__messages-form-item">
+          <legend class="message__title"><span>Опишите свои эмоции:</span></legend>
+          <ul class="message__list  message__list--text-inputs">
+            <li class="message__item  message__item--text-inputs">
+              <label for="message-text" class="visually-hidden">Контактный телефон*:</label>
+              <textarea id="message-text" class="message__input  message__textarea" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
+            </li>
+          </ul>
         </fieldset>
-        <button class="button" type="submit">
+        <button class="button  page-main__messages-button" type="submit">
           ОТПРАВИТЬ ОТЗЫВ
         </button>
+        <span class="page-main__messages-notice">* — обязательные поля</span>
       </form>
     </main>
 

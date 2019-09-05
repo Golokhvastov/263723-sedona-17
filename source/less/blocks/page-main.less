@@ -128,7 +128,6 @@
 
 .page-main__messages-form-item {
   position: relative;
-  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 17px;
@@ -143,6 +142,15 @@
   width: 100%;
   height: 1px;
   background-color: rgba(1, 1, 1, 0.1);
+}
+
+.page-main__messages-button {
+  width: 280px;
+  margin-top: 21px;
+}
+
+.page-main__messages-notice {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -236,30 +244,54 @@
   }
 
   .page-main__messages-form {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // margin-top: -7px;
-    // margin-bottom: 47px;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 5px;
+    margin-bottom: 61px;
   }
 
   .page-main__messages-form-item {
-    // position: relative;
-    // padding-top: 20px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // margin-top: 17px;
-    // margin-bottom: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 51px;
+  }
+
+  .page-main__messages-form-item:nth-child(3) {
+    order: -1;
   }
 
   .page-main__messages-form-item::before {
-    // content: "";
-    // position: absolute;
-    // top: -18px;
-    // left: 0;
-    // width: 100%;
-    // height: 1px;
-    // background-color: rgba(1, 1, 1, 0.1);
+    display: none;
+  }
+
+  .page-main__messages-form-item:nth-child(3)::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 323px;
+    width: 1px;
+    height: 100%;
+    background-color: bg__gray--darker;
+  }
+
+  .page-main__messages-button {
+    width: 324px;
+    margin-top: 7px;
+  }
+
+  .page-main__messages-notice {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 12px;
   }
 }
 
@@ -304,9 +336,22 @@
     margin-bottom: 85px;
   }
 
-  .page-main__form {
-    // Временно для сетки
-    height: 1140px;
+  .page-main__messages-form {
+    width: 960px;
+    margin-top: -11px;
+    padding-top: 0;
     margin-bottom: 66px;
+  }
+
+  .page-main__messages-form-item {
+    margin-bottom: 50px;
+  }
+
+  .page-main__messages-form-item:nth-child(3)::before {
+    left: 480px;
+  }
+
+  .page-main__messages-button {
+    width: 480px;
   }
 }

@@ -12,6 +12,13 @@
   text-align: center;
 }
 
+.message__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 20px;
+}
+
 .message__item {
   position: relative;
 }
@@ -86,6 +93,10 @@
   margin-bottom: 10px;
 }
 
+.message__label-tel--desktop {
+  display: none;
+}
+
 .message__input {
   font-size: @font-size__title;
   font-weight: bold;
@@ -127,8 +138,139 @@
   resize: none;
 }
 
-.message__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: @tablet-width) {
+  .message--small {
+    width: 266px;
+  }
+
+  .message--big {
+    width: 100%;
+    border-top: 1px solid @bg__gray--darker;
+  }
+
+  .message__title {
+    font-size: @font-size__title--big;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .message--big .message__title {
+    width: 400px;
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .message__list {
+    padding-top: 55px;
+  }
+
+  .message--big .message__list {
+    padding-top: 42px;
+  }
+
+  .message--big .message__list--checkboxs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 37px;
+  }
+
+  .message--big .message__list--label-above-input {
+    padding-top: 8px;
+  }
+
+  .message__item--text-inputs {
+    margin-bottom: 21px;
+  }
+
+  .message__item--radio {
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+
+  .message__item--checkbox {
+    margin-bottom: 34px;
+    width: 200px;
+  }
+
+  .message__item--checkbox:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .message__label--whole-line {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .message {
+    width: 434px;
+  }
+
+  .message--small {
+    width: 400px;
+  }
+
+  .message--big {
+    width: 100%;
+  }
+
+  .message__title {
+    text-align: center;
+  }
+
+  .message--small .message__title {
+    text-align: left;
+  }
+
+  .message--big .message__list--checkboxs {
+    width: 100%;
+  }
+
+  .message--big .message__list--label-above-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 58px;
+  }
+
+  .message__list--label-above-input .message__item--text-inputs {
+    margin-bottom: 0;
+  }
+
+  .message__item--icon {
+    flex-wrap: nowrap;
+  }
+
+  .message__item--checkbox {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .message__label--whole-line {
+    margin-right: 16px;
+    padding-left: 0;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    max-width: 150px;
+  }
+
+  .message__label-tel--mobile {
+    display: none;
+  }
+
+  .message__label-tel--desktop {
+    display: inline-block;
+  }
+
+  .message__list--label-above-input .message__input {
+    width: 230px;
+    flex-shrink: 0;
+  }
 }
