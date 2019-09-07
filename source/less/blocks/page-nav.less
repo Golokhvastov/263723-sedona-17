@@ -37,12 +37,22 @@
   background-position: 0 0;
 }
 
-.main-nav--opened .page-nav__toggle {
+.page-nav--opened .page-nav__toggle {
   width: 63px;
 }
 
-.main-nav--opened .page-nav__toggle::before {
+.page-nav--opened .page-nav__toggle::before {
   background-image: url("../img/icon-cross.svg");
+}
+
+.page-nav--nojs .page-nav__toggle {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-nav--closed .page-nav__site-list {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
