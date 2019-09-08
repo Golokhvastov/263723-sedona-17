@@ -1,14 +1,14 @@
-var navPage = document.querySelector('.page-nav');
-var navToggle = document.querySelector('.page-nav__toggle');
+var navPage = document.querySelector(".page-nav");
+var navToggle = document.querySelector(".page-nav__toggle");
 
-navPage.classList.remove('page-nav--nojs');
+navPage.classList.remove("page-nav--nojs");
 
-navToggle.addEventListener('click', function() {
-  if (navPage.classList.contains('page-nav--closed')) {
-    navPage.classList.remove('page-nav--closed');
-    navPage.classList.add('page-nav--opened');
+navToggle.addEventListener("click", function() {
+  if (navPage.classList.contains("page-nav--closed")) {
+    navPage.classList.remove("page-nav--closed");
+    navPage.classList.add("page-nav--opened");
   } else {
-    navPage.classList.add('page-nav--closed');
-    navPage.classList.remove('page-nav--opened');
+    navPage.classList.add("page-nav--closed");
+    navPage.classList.remove("page-nav--opened");
   }
 });
