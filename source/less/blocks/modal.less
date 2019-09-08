@@ -3,7 +3,7 @@
     z-index: 200;
     top: 50%;
     left: 50%;
-    // display: none;
+    display: none;
     width: 320px;
     margin-top: -161px;
     margin-left: -160px;
@@ -69,6 +69,15 @@
   margin-bottom: 35px;
 }
 
+.modal-show {
+    display: block;
+    animation: bounce .6s;
+}
+
+.modal-error {
+    animation: shake .6s;
+}
+
 @media (min-width: @tablet-width) {
   .modal {
       width: 640px;
@@ -122,4 +131,36 @@
 
 @media (min-width: @desktop-width) {
 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-2000px)
+    }
+
+    70% {
+        transform: translateX(30px)
+    }
+
+    90% {
+        transform: translateX(-10px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes shake {
+    0%, to {
+        transform: translateX(0)
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px)
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px)
+    }
 }
