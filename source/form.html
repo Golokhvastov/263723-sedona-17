@@ -50,20 +50,26 @@
           <ul class="message__list  message__list--text-inputs">
             <li class="message__item  message__item--text-inputs">
               <label class="message__label" for="message-name">ИМЯ*:</label>
-              <input class="message__input" id="message-name" type="text" name="name" value="" placeholder="Петр">
+              <div class="message__input-wrapper">
+                <input class="message__input" id="message-name" type="text" name="name" value="" placeholder="Петр">
+              </div>
             </li>
             <li class="message__item  message__item--text-inputs">
               <label class="message__label" for="message-surname">ФАМИЛИЯ*:</label>
-              <input class="message__input" id="message-surname" type="text" name="surname" value="" placeholder="Иванов">
+              <div class="message__input-wrapper">
+                <input class="message__input" id="message-surname" type="text" name="surname" value="" placeholder="Иванов">
+              </div>
             </li>
             <li class="message__item  message__item--text-inputs">
               <label class="message__label" for="message-patronymic">Отчество:</label>
-              <input class="message__input" id="message-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+              <div class="message__input-wrapper">
+                <input class="message__input" id="message-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+              </div>
             </li>
           </ul>
         </fieldset>
         <fieldset class="message  message--big  page-main__messages-form-item">
-          <legend class="message__title"><span>Контактная информация:</span></legend>
+          <legend class="message__title  message__title--big-one-line"><span>Контактная информация:</span></legend>
           <ul class="message__list  message__list--text-inputs  message__list--label-above-input">
             <li class="message__item  message__item--text-inputs  message__item--icon  message__item--icon-phone">
               <label class="message__label  message__label--whole-line" for="message-tel">
@@ -152,7 +158,7 @@
           </ul>
         </fieldset>
         <fieldset class="message  message--big  page-main__messages-form-item">
-          <legend class="message__title"><span>Опишите свои эмоции:</span></legend>
+          <legend class="message__title  message__title--big-one-line"><span>Опишите свои эмоции:</span></legend>
           <ul class="message__list  message__list--text-inputs">
             <li class="message__item  message__item--text-inputs">
               <label for="message-text" class="visually-hidden">Контактный телефон*:</label>
@@ -217,5 +223,6 @@
 
     <script src="js/page-nav.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
